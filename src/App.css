@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
-}
+.App{
+    width: 36rem;
+    max-width: 100%;
+    min-height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+    background-image: url("assets/img/quran-bg.png");
+    background-attachment: fixed;
+    background-position: center;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
+.loader{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    flex-direction: column;
+    align-items: center;
+    background: #421e0038;
+    width: 250px;
+    height: 230px;
+        border-radius: 25px;
+            justify-content: space-evenly;
+    margin: 0 auto;
+
+  }
+
+.header{
+
+display: flex;
+height: 70px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.header-title{
+  
+    display: flex;
+    align-items: center;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.button{
+width: 50%;
+padding: 10px;
+margin: 20px 0px;
+border-radius: 25px;
+border: none;
+background-color: var(--button-color);
+color: #fff;
+font-family: var(--fontMain);
+font-size:var(--fontSizeMain);
+cursor: pointer;
+
+}
+
+
+/*****main page***/
+.searchBox{
+
+    width: 100%;
+    padding:15px;
+    background-color: #965d3f;
   }
-  to {
-    transform: rotate(360deg);
+
+
+  .searchBox input{
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px;
+    border: none;
   }
+
+  .subject{
+
+    display: flex;
+    justify-content: space-around;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 20px 0px;
+    margin-left: 30px;
+  }
+
+  .itemSoreh {
+       margin-left: 110px;
+
+  }
+  .itemSoreh a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .itemSoreh a img{
+    width: 15%;
+
+  }
+ 
+  .separator{
+
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0px;
+  }
+
+
+
+@media (max-width:768px) {
+     .separator{
+      width: 80%;
+     }
+     .header-title {
+       margin-right: -20px;
+}
 }

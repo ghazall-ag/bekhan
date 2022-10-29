@@ -1,0 +1,44 @@
+.ul_Setting{
+    margin: 2rem 0;
+   
+}
+
+.li_Setting{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#421e0063;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    height: 11vh;
+}
+
+.btn_Change_Size{
+    width: 22px;
+    height: 22px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin:0px 4px;
+}
+.color_picker{
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 3rem;
+    width: 3rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 15px;
+    
+}
+.color_picker::-webkit-color-swatch{
+   border-radius: 50%;
+   border: none;
+}
+.color_picker::-moz-color-swatch{
+   border-radius: 50%;
+   border: none;
+}

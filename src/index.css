@@ -1,13 +1,35 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  direction: rtl;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+font-family: "IRANSans";
+src: url("assets/fonts/eot/IRANSansWeb.eot");
+src: url("assets/fonts/woff/IRANSansWeb.woff") format("woff"),
+url("assets/fonts/woff2/IRANSansWeb.woff2") format("woff2")}
+
+
+:root {
+ --button-color:#421e00;
+ --font-color:#421e00;
+ --fontMain:"IRANSans", Arial, sans-serif;
+ --fontSizeMain:16px;
+ --greenColor:#0b5c53;
+}
+
+body{
+  font-family:var(--fontMain);
+  font-size: var(--fontSizeMain);
+  color: var(--font-color);
+  background-color: #dfc684;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }

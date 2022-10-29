@@ -1,0 +1,36 @@
+.container{
+
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.container img{
+width: 50%;
+
+}
+
+.counter{
+
+    background-color: var(--greenColor);
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+}
+.counter-main{
+
+   display: table;
+    margin: 70px auto;
+}
+.counter h2{
+
+color: #fff;
+font-weight: 600px;
+}
+
+
+.salavatButton{
+
+    margin: 5rem 0;
+}

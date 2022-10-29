@@ -1,23 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import {Route, Redirect, Routes } from 'react-router-dom'
+
+//components
+import Main from './Components/main/Main';
+import Header from './Components/header/Header';
+import Verse from './Components/verse/Verse';
+import Setting from './Components/setting/Setting';
+import AboutUs from './Components/aboutUs/AboutUs';
+import Login from './Components/login/Login';
+import Favorite from './Components/favorite/Favorite';
+import Salavat from './Components/Salavat/Salavat';
+import Sojdeh from './Components/sojdeh/Sojdeh';
+import { AuthProvider } from './Contexts/AuthContext';
+import { RequiredAuth } from './Contexts/RequiredAuth';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AuthProvider>
+
+      <Header  title="بخوان"/>
+      <Routes>
+        <Route path="/sureh/:id/:ps" element={<Verse/>}/>
+        <Route path="/salavat" element={<RequiredAuth><Salavat/></RequiredAuth>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/setting" element={<Setting/>} />
+        <Route path="/aboutus" element={<AboutUs/>} />
+        <Route path="/sojdeh" elementt={<RequiredAuth><Sojdeh/></RequiredAuth>} />
+        <Route path="/favorite" element={<RequiredAuth><Favorite/></RequiredAuth>} />
+        <Route path="/" element={<Main/>} />
+ 
+      </Routes>
+
+    </AuthProvider>
     </div>
   );
 }

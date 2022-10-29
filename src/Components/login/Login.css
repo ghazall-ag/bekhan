@@ -1,0 +1,29 @@
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6rem 0px;
+}
+.loginForm h2{
+margin-bottom: 4rem;
+}
+.loginForm input{
+    width: 50%;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 25px;
+    border: none;
+}
+.loginForm label{
+    font-weight: 600;
+}
+
+input[type="submit"] {
+background-color: var(--button-color);
+color: #fff;
+font-family: var(--fontMain);
+font-size:var(--fontSizeMain);
+margin: 2rem 0;
+cursor: pointer;
+
+}
